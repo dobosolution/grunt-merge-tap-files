@@ -1,0 +1,61 @@
+
+> dobo-material-backend@1.0.0 testnode /Users/dominiqueboes/Documents/_GitLab/dobo-restserver-plugin-dts-backend
+> find ./tests -name '*Test.js' -not -path '*react/*' | xargs node_modules/mocha/bin/mocha -R tap
+
+Using conffile for logging:  /Users/dominiqueboes/Documents/_GitLab/dobo-restserver-plugin-dts-backend/node_modules/mocha/bin/config
+Using conffile for logging:  /Users/dominiqueboes/Documents/_GitLab/dobo-restserver-plugin-dts-backend/node_modules/mocha/bin/config
+1..51
+ok 1 CheckRequestParams should have one defined function
+ok 2 CheckRequestParams should have prototype isNotKey (ex: checkExistStr) 
+ok 3 CheckRequestParams CheckRequestParams-CheckExistStr should validate a good key
+ok 4 CheckRequestParams CheckRequestParams-CheckExistStr should return an error if the key is missing
+ok 5 CheckRequestParams CheckRequestParams-CheckExistStr should also works with a callback
+ok 6 UrlParser UrlParser is a function
+ok 7 UrlParser UrlParser returns an Object
+ok 8 UrlParser UrlParser detects cases correctly
+ok 9 UrlParser UrlParser returns the correct amount of Parameters
+ok 10 UrlParser UrlParser returns the correct amount of Properties
+ok 11 UrlParser UrlParser returns the correct Properties
+ok 12 createDatabase for tests should result known tables array of the orm
+ok 13 createDatabase for tests should result the correct record
+ok 14 Drawdata getElementByHash should return an error on unknown hash
+ok 15 Drawdata getElementByHash should return a element by a hash
+not ok 16 Drawdata should persist a basic dataset
+ok 17 Drawdata should not persist a invalid dataset
+ok 18 Drawstructure getElementByid should return a element by its id
+ok 19 Drawstructure getElementByid should return an error on unknown id
+ok 20 Drawstructure should persist a basic dataset
+ok 21 Drawstructure should not persist a invalid dataset
+ok 22 Importdata getElementByHash should return an error on unknown hash
+ok 23 Importdata getElementByHash should return a element by a hash
+ok 24 Importdata getElementByLatestSourceStructure should return the latest element by a source structure id
+ok 25 Importdata insertOrUpdateElementToHash should insert a record in table
+ok 26 Importdata insertOrUpdateElementToHash should get an error if something goes wrong
+ok 27 Importdata should persist a basic dataset
+ok 28 Importdata should not persist a invalid dataset
+ok 29 Importdata setElementToHashWithSourceStructureID should set a new record in table
+ok 30 Importdata setElementToHashWithSourceStructureID should get an error if something goes wrong
+ok 31 Importdata updateElementToHash should set a new record in table
+ok 32 Importdata updateElementToHash should get an error if something goes wrong
+ok 33 Loading models should result known tables array of the orm
+ok 34 Loading models should load all models
+ok 35 sourcestructure model getElementById should return an error on unknown id # SKIP -
+ok 36 sourcestructure model getElementById should return a element by a id # SKIP -
+ok 37 sourcestructure model getItemTest should return one element
+ok 38 sourcestructure model getItemTest should return error no key was found
+ok 39 sourcestructure model getListTest should return all elements
+ok 40 sourcestructure model should persist a basic dataset
+ok 41 sourcestructure model should not persist a invalid dataset
+ok 42 Transformation getElementByDrawStructureId should return a element by its reference id
+ok 43 Transformation getElementByDrawStructureId should return an error on unknown reference id
+ok 44 Transformation getElementByid should return a element by its id
+ok 45 Transformation getElementByid should return an error on unknown id
+ok 46 Transformation should persist a basic dataset
+ok 47 Transformation should not persist a invalid dataset
+ok 48 dts-Plugin-backend route get /rest/backend/sourcestructure/items/:item tests: should return a object with route.
+ok 49 dts-Plugin-backend route get /rest/backend/sourcestructure/items/:item tests: should return error "Key was not found"
+ok 50 dts-Plugin-backend route get /rest/backend/sourcestructure/list tests: should return a object with route.
+ok 51 dts-Plugin-backend route /rest/backend/sourcestructure tests: should return a object with route.
+# tests 49
+# pass 49
+# fail 0
