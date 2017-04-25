@@ -18,10 +18,10 @@
   "scripts": {
     "test": "find ./tests -name '*Test.js' | xargs node_modules/mocha/bin/mocha -R tap"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
-    "registry": "http://npm.ci.dobosolution.de"
+    "registry": "https://npmjs.com"
   },
   "main": "tasks/grunt-merge-tap-files.js",
   "dependencies": {
