@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         // generate docs
         jsdoc : {
             dist : {
-                src: ['lib/**/*.js'],
+                src: ['tasks/**/*.js'],
                 options: {
                     destination: conf.docsDir,
                     template: 'node_modules/minami'
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         
         // linter
         eslint: {
-            src: ['lib/**/*.js'],
+            src: ['tasks/**/*.js'],
             options: {
                 outputFile: conf.outDir +'/checkstyle.xml',
                 format: 'checkstyle'
