@@ -44,7 +44,6 @@ module.exports = function (grunt) {
             outputFile : ''
         });
 
-        console.log('config:', this.config);
         var confparam = _.compact(
             _.map(process.argv, function(elm){
                 if(S(elm).startsWith("--conf:")){
