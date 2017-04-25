@@ -1,32 +1,36 @@
 {
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "fs-extra": "^2.1.2",
-    "mocha": "^3.2.0"
-  },
-  "homepage": "https://github.com/dobosolution/grunt-merge-tap-files",
-  "description": "Merge several tap.log files into one tap.log file.",
-  "keywords": [
-    "grunt merge tap log files"
-  ],
-  "repository": {
-    "url": "https://github.com/dobosolution/grunt-merge-tap-files.git",
-    "type": "git"
-  },
-  "name": "grunt-merge-tap-files",
-  "author": "dobo Solution GmbH",
-  "scripts": {
-    "test": "find ./tests -name '*Test.js' | xargs node_modules/mocha/bin/mocha -R tap"
-  },
-  "version": "1.0.0",
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npmjs.com"
-  },
-  "main": "tasks/grunt-merge-tap-files.js",
-  "dependencies": {
-    "async": "^2.3.0",
-    "string": "^3.3.3",
-    "underscore": "^1.8.3"
-  }
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"mocha": "^3.2.0",
+		"fs-extra": "^2.1.2"
+	},
+	"homepage": "https://github.com/dobosolution/grunt-merge-tap-files",
+	"description": "Merge several tap.log files into one tap.log file.",
+	"keywords": [
+		"grunt",
+		"merge",
+		"tap",
+		"log",
+		"files"
+	],
+	"repository": {
+		"url": "https://github.com/dobosolution/grunt-merge-tap-files.git",
+		"type": "git"
+	},
+	"name": "grunt-merge-tap-files",
+	"author": "dobo Solution GmbH",
+	"scripts": {
+		"test": "find ./tests -name '*Test.js' | xargs node_modules/mocha/bin/mocha -R tap"
+	},
+	"version": "1.0.0",
+	"license": "MIT",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
+	"main": "tasks/grunt-merge-tap-files.js",
+	"dependencies": {
+		"underscore": "^1.8.3",
+		"async": "^2.3.0",
+		"string": "^3.3.3"
+	}
 }
