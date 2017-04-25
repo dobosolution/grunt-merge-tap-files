@@ -21,7 +21,7 @@ Install grunt-merge-tap-files:
    grunt.initConfig({
         mergetapfiles: {
             options: {
-                cmd: '/out',
+                cmd: __dirname + '/out',
                 src: ['tap1.log', 'tap2.log'],
                 outputFile: 'tapmerged.log'
             }
