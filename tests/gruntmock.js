@@ -5,7 +5,7 @@ var _       = require('underscore')
 module.exports = {
 
     data: {},
-    
+
     tasks: {},
     
     options: function(){},

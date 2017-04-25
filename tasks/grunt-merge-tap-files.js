@@ -44,6 +44,7 @@ module.exports = function (grunt) {
             outputFile : ''
         });
 
+        console.log('config:', this.config);
         var confparam = _.compact(
             _.map(process.argv, function(elm){
                 if(S(elm).startsWith("--conf:")){
@@ -61,13 +62,13 @@ module.exports = function (grunt) {
         ));
 
         if(!_.isString(options.cmd) || _.isEmpty(options.cmd)) {
-            return grunt.error('cmd is not set or no string');
+            console.error('cmd is not set or no string');
         }
         if(!_.isArray(options.src) || _.isEmpty(options.src)) {
-            return grunt.error('src is not set or no array');
+            console.error('src is not set or no array');
         }
         if(!_.isString(options.outputFile) || _.isEmpty(options.outputFile)) {
-            return grunt.error('outputFile is not set or no string');
+            console.error('outputFile is not set or no string');
         }
 
         var _slash = '/';
@@ -103,7 +104,7 @@ module.exports = function (grunt) {
                 , {encoding: 'utf8'}
                 );
             if(err) {
-                grunt.error(err);
+                console.error(err);
             }
 
         });
