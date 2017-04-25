@@ -6,7 +6,7 @@ This grunt task is build because if often have more than one tap logs in the sam
 In the Jenkins configuration you can only to refer one tap.log file. Whith this task you can merge many tap logs in one tap log file. 
 
 ## Install
-Install grunt-replace-configvalues:
+Install grunt-merge-tap-files:
 ```bash
  npm install grunt-merge-tap-files --save-dev
 ```

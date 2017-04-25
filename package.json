@@ -18,7 +18,7 @@
   "scripts": {
     "test": "find ./tests -name '*Test.js' | xargs node_modules/mocha/bin/mocha -R tap"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
