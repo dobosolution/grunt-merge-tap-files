@@ -21,7 +21,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npmjs.com"
+    "registry": "https://registry.npmjs.org"
   },
   "main": "tasks/grunt-merge-tap-files.js",
   "dependencies": {

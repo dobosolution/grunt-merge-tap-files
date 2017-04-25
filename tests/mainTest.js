@@ -1,6 +1,5 @@
 
-var assert = require("assert")
-    , chai = require("chai")
+var chai = require("chai")
     , expect = chai.expect
     ;
 
