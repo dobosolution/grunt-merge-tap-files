@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
     var mergedFile = '';
     var mergedArray = [];
-    var count = 1;
+    var count = 0;
     var notOk = 0;
 
     var lineByLine = function (file, callback) {
@@ -27,8 +27,8 @@ module.exports = function (grunt) {
                     newRow += ' ' + rowArray.shift();
                 }
                 delete rowArray[0];
-                newRow += ' ' + count;
                 count++;
+                newRow += ' ' + count;
                 newRow += ' ' + rowArray.join(' ');
                 mergedArray.push(newRow);
             }

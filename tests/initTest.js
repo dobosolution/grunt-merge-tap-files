@@ -42,8 +42,8 @@ describe('merge tap log files', function(){
 
         fs.readFile(__dirname +'/tmp/tapmerge.log', function(err, data){
             expect(err).to.be.null;
-            expect(data.toString()).to.contains('# tests 130');
-            expect(data.toString()).to.contains('# pass 128');
+            expect(data.toString()).to.contains('# tests 129');
+            expect(data.toString()).to.contains('# pass 127');
             expect(data.toString()).to.contains('# fail 2');
             done();
         });
